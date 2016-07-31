@@ -1,0 +1,11 @@
+#!/bin/bash
+# -a is for archive mode
+# -A preserves access control lists
+# -X preservces extended attributes
+# -v for verbose!
+# the --n option runs in test mode, so i dont screw things up first time
+# Clearly need to change the backup folder before running
+
+backup_dir="/run/media/mag/backups/"
+
+sudo rsync -aAXv --numeric-ids --delete --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found","/home/*/.thumbnails/*","/home/*/.cache/mozilla/*","/home/*/.cache/google-chrome/*"} /* $backup_dir
