@@ -7,5 +7,6 @@
 # Clearly need to change the backup folder before running
 
 backup_dir="/run/media/mag/backups/"
+target_dir="/*"
 
-sudo rsync -aAXv --numeric-ids --delete --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found","/home/*/.thumbnails/*","/home/*/.cache/mozilla/*","/home/*/.cache/google-chrome/*"} /* $backup_dir
+sudo rsync -aAXv --numeric-ids --delete --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found","/home/*/.thumbnails/*","/home/*/.cache/mozilla/*","/home/*/.cache/google-chrome/*"} $target_dir $backup_dir
