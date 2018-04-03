@@ -11,16 +11,14 @@ export EDITOR=$VISUAL
 alias ls='ls --color=auto'
 # Bash prompt
 #PS1='[\u@\h \W]\$ '
-PS1='\[\e[0;32m\]\u\[\e[m\] \[\e[1;34m\]\w\[\e[m\] \[\e[1;32m\]\$\[\e[m\] '
+PS1='\[\e[0;32m\]\u\[\e[m\] \[\e[1;34m\]\w\[\e[m\]$(__git_ps1) \[\e[1;32m\]\$\[\e[m\] '
 
 # Merge Xresources for urxvt, etc. Needed with wayland
 xrdb -merge .Xresources
 
-# VA-API driver for GPU acceleration with supported video formats/players
-#export VDPAU_DRIVER=va_gl
-#export LIBVA_DRIVER_NAME=vdpau
+# Git stuff
+source ~/.git-prompt.sh
+source ~/.git-completion.bash
 
-# Virtualenvwrapper setup for python2
-export WORKON_HOME=~/Projects/Envs
-VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
-source /usr/bin/virtualenvwrapper.sh
+# Dotfiles alias
+alias config='/usr/bin/git --git-dir=/home/mag/.dotfiles/ --work-tree=/home/mag'
