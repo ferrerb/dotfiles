@@ -1,7 +1,9 @@
 set nocompatible
 
 " Pathogen
-execute pathogen#infect()
+"execute pathogen#infect()
+
+so ~/.vim/plugins.vim
 
 set number
 set ruler
@@ -10,7 +12,9 @@ filetype plugin indent on
 " Colors
 syntax enable
 set background=dark
-colorscheme solarized
+set termguicolors
+color dracula
+
 
 set nobackup
 set noswapfile

@@ -5,6 +5,7 @@
 # -v for verbose!
 # the --n option runs in test mode, so i dont screw things up first time
 # Clearly need to change the backup folder before running
+# First folder in the command is source, second is destination
 
 backup_dir="/run/media/mag/backups/"
 target_dir="/*"

@@ -1,6 +1,6 @@
 URxvt.termName: rxvt-unicode-256color
 ! Color scheme
-#include "/home/mag/.config/termcolors/solarized-dark"
+#include "/home/mag/.config/termcolors/dracula"
 
 URxvt.intensityStyles:  true
 URxvt.colorMode: on
