@@ -62,44 +62,45 @@ highlight = #2f2f2f
 # Code licensed under the MIT license
 
 [colors]
+# hard contrast: background = #f9f5d7
+background = #fbf1c7
+# soft contrast: background = #f2e5bc
+foreground = #3c3836
+foreground_bold = #3c3836
 
-# special
-foreground      = #f8f8f2
-foreground_bold = #f8f8f2
-cursor          = #f8f8f2
-background      = #282a36
+# light0 + gray
+color0 = #fbf1c7
+color8 = #928374
 
-# black
-color0  = #000000
-color8  = #4d4d4d
+# neutral_red + faded_red
+color1 = #cc241d
+color9 = #9d0006
 
-# red
-color1  = #ff5555
-color9  = #ff6e67
+# neutral_green + faded_green
+color2 = #98971a
+color10 = #79740e
 
-# green
-color2  = #50fa7b
-color10 = #5af78e
+# neutral_yellow + faded_yellow
+color3 = #d79921
+color11 = #b57614
 
-# yellow
-color3  = #f1fa8c
-color11 = #f4f99d
+# neutral_blue + faded_blue
+color4 = #458588
+color12 = #076678
 
-# blue
-color4  = #bd93f9
-color12 = #caa9fa
+# neutral_purple + faded_purple
+color5 = #b16286
+color13 = #8f3f71
 
-# magenta
-color5  = #ff79c6
-color13 = #ff92d0
+# neutral_aqua + faded_aqua
+color6 = #689d6a
+color14 = #427b58
 
-# cyan
-color6  = #8be9fd
-color14 = #9aedfe
+# dark4 + dark1
+color7 = #7c6f64
+color15 = #3c3836
 
-# white
-color7  = #bfbfbf
-color15 = #e6e6e6
+# vim: ft=dosini cms=#%s
 
 [hints]
 #font = Monospace 12

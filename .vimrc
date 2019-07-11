@@ -1,8 +1,5 @@
 set nocompatible
 
-" Pathogen
-"execute pathogen#infect()
-
 so ~/.vim/plugins.vim
 
 set number
@@ -10,11 +7,11 @@ set ruler
 filetype plugin indent on
 
 " Colors
+set t_Co=256
 syntax enable
-set background=dark
+set background=light
+colorscheme gruvbox
 set termguicolors
-color dracula
-
 
 set nobackup
 set noswapfile

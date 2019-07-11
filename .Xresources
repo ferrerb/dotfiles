@@ -1,6 +1,6 @@
 URxvt.termName: rxvt-unicode-256color
 ! Color scheme
-#include "/home/mag/.config/termcolors/dracula"
+#include "/home/mag/.config/termcolors/gruvbox-light"
 
 URxvt.intensityStyles:  true
 URxvt.colorMode: on
